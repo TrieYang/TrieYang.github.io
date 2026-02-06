@@ -5,35 +5,53 @@
   <title>Trie’s Free / Busy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body {
+    :root { --max: 1180px; } /* tweak: 1100–1250 to taste */
+
+    body{
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       margin: 0;
-      padding: 24px;
       background: #fff;
+      color: #111;
     }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.25rem;
+
+    .wrap{
+      max-width: var(--max);
+      margin: 28px auto 40px;
+      padding: 0 18px;
     }
-    p {
-      color: #555;
-      margin-bottom: 1.5rem;
-    }
-    iframe {
-      border: 0;
+
+    h1{ font-size: 2rem; margin: 0 0 6px; }
+    p{ margin: 0 0 18px; color: #555; }
+
+    .cal{
       width: 100%;
-      height: 800px;
+      height: 820px;       
+      border: 0;
+      border-radius: 18px; 
+      overflow: hidden; 
+      display: block;
     }
   </style>
 </head>
+
 <body>
+  <div class="wrap">
+    <h1>Trie’s Free / Busy</h1>
+    <p>Any unoccupied slots below are open.</p>
 
-  <h1>Trie’s Free / Busy</h1>
-  <p>Any unoccupied slots below are open.</p>
+    <iframe
+      class="cal"
+      scrolling="no"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://calendar.google.com/calendar/embed?src=3ed6ccdb360b47be65d2932f950b6a02c7c8d9d91a89e54677d0343e66f20676%40group.calendar.google.com&ctz=America%2FVancouver">
+    </iframe>
+  </div>
 
-  <!-- Google Calendar Embed -->
- <iframe src="https://calendar.google.com/calendar/embed?src=3ed6ccdb360b47be65d2932f950b6a02c7c8d9d91a89e54677d0343e66f20676%40group.calendar.google.com&ctz=America%2FVancouver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-
+  <script>    const iframe = document.querySelector('iframe.cal');
+    const url = new URL(iframe.src);
+    url.searchParams.set('mode', 'WEEK');            // default to week view
+    url.searchParams.set('ctz', 'America/Vancouver'); // optional: lock timezone
+    iframe.src = url.toString();
+  </script>
 </body>
 </html>
