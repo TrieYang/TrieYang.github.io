@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Participant Booking for Security Robot Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --max: 1180px; } /* tweak: 1100–1250 to taste */
+
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #111;
+    }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 28px auto 40px;
+      padding: 0 18px;
+    }
+
+    h1{ font-size: 2rem; margin: 0 0 6px; }
+    p{ margin: 0 0 18px; color: #555; }
+
+    .cal{
+      width: 100%;
+      height: 820px;       
+      border: 0;
+      border-radius: 18px; 
+      overflow: hidden; 
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>Participant Booking for Security Robot Study</h1>
+    <p>Any unoccupied slots below are open.</p>
+
+    <iframe
+      class="cal"
+      scrolling="no"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://calendar.google.com/calendar/embed?src=fbb2728fb157b7fbe3fd356db928497895b60b92984c16ac0870d0528b0d05d8%40group.calendar.google.com&ctz=America%2FVancouver">
+    </iframe>
+  </div>
+
+  <script>    const iframe = document.querySelector('iframe.cal');
+    const url = new URL(iframe.src);
+    url.searchParams.set('mode', 'WEEK');            // default to week view
+    url.searchParams.set('ctz', 'America/Vancouver'); // optional: lock timezone
+    iframe.src = url.toString();
+  </script>
+</body>
+</html>
