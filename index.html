@@ -6,55 +6,112 @@
   <title>Trie (Yu) Yang</title>
   <style>
     body {
-      max-width: 720px;
-      margin: 60px auto;
+      max-width: 860px;
+      margin: 40px auto 60px;
       padding: 0 20px 80px;
       background: #fff;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.6;
+      line-height: 1.5;
       color: #111;
     }
 
     a { color: #0066cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    h1 { margin-bottom: 0; }
-    h2 { margin-top: 32px; }
-    .subtitle { color: #555; margin-top: 4px; }
-    .hero {
+    h1 { margin: 0 0 0.15em; font-size: 2rem; line-height: 1.2; }
+    h2 { margin-top: 2em; margin-bottom: 0.4em; scroll-margin-top: 16px; }
+    .subtitle { color: #555; }
+    .masthead {
       display: flex;
-      align-items: center;
-      gap: 20px;
+      align-items: flex-start;
+      gap: 25px;
+      margin-top: 12px;
     }
-    .headshot {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
+    .identity { width: 163px; flex: none; }
+    .headshot { width: 163px; height: auto; display: block; }
+    .jump { margin-top: 0.7em; }
+    .jump p { margin: 0 0 0.15em; }
+    .jump ul { list-style: none; margin: 0; padding: 0; }
+    .jump li { margin: 0; }
+    .jump a::before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-right: 6px;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid #0066cc;
+      vertical-align: 1px;
+    }
+    .intro { min-width: 0; padding-top: 2px; }
+    .stack { margin-top: 0.85em; }
+    .stack p { margin: 0; }
+    .stack .ico {
+      width: 1em;
+      height: 1em;
+      margin-right: 0.2em;
+      vertical-align: -0.12em;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.6;
     }
     ul { margin: 0.4em 0 1em; padding-left: 1.2em; }
     li { margin: 0.35em 0; }
+    .jump ul { margin: 0; padding: 0; }
+    .jump li { margin: 0; }
+    @media (max-width: 640px) {
+      .masthead { display: block; }
+      .identity { width: 163px; margin-bottom: 16px; }
+    }
   </style>
 </head>
 <body>
 
-<div class="hero">
-  <img class="headshot" src="headshot.jpeg" alt="Trie Yang">
-  <div>
+<header class="masthead" id="about">
+  <div class="identity">
+    <img class="headshot" src="headshot.jpeg" alt="Trie Yang">
+    <nav class="jump" aria-label="Jump to">
+      <p>Jump to</p>
+      <ul>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="intro">
     <h1>Trie (Yu) Yang</h1>
-    <div class="subtitle">
-      Computer Science @ UBC · Human-Computer Interaction · Human-Centered AI
+    <div class="stack">
+      <p>Starting HCI Researcher</p>
+      <p>Computer Science</p>
+      <p>The University of British Columbia</p>
     </div>
-    <div class="subtitle">
-      <a href="cv.pdf">CV</a>
+    <div class="stack">
+      <p>With <a href="https://dwyoon.com/">Professor Dongwook Yoon</a>, <a href="https://www.cs.ubc.ca/labs/socius/">SOCIUS Lab</a></p>
+    </div>
+    <div class="stack">
+      <p>Human-Computer Interaction · Human-Centered AI</p>
+    </div>
+    <div class="stack">
+      <p>
+        <a href="cv.pdf"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l5 5V20.5H7z"/><path d="M14 3.5V9h5"/><path d="M9.5 13h5M9.5 16.5h5"/></svg>CV</a>
+        ·
+        <a href="https://github.com/TrieYang"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18.5c-4 1.3-4-2.2-5.5-2.7"/><path d="M15 21.2v-2.6a2.6 2.6 0 0 0-.7-2c2.3-.3 4.7-1.1 4.7-5.1a4 4 0 0 0-1.1-2.8 3.7 3.7 0 0 0-.1-2.7s-.9-.3-2.9 1.1a10 10 0 0 0-5.2 0C7.6 4.7 6.7 5 6.7 5a3.7 3.7 0 0 0-.1 2.7 4 4 0 0 0-1.1 2.8c0 4 2.4 4.8 4.7 5.1a2.6 2.6 0 0 0-.7 2v2.6"/></svg>GitHub</a>
+        ·
+        <a href="mailto:yyang124@students.cs.ubc.ca"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1.2"/><path d="M4 6.5 12 13l8-6.5"/></svg>Email</a>
+      </p>
+    </div>
+    <div class="stack">
+      <p>Email: <a href="mailto:yyang124@students.cs.ubc.ca">yyang124@students.cs.ubc.ca</a></p>
     </div>
   </div>
-</div>
+</header>
 
 <p>I am a starting HCI researcher at UBC.</p>
 <p>My research lies in the tension space between [technical performance] and [the broader demands of responsible technology design], investigating how technical systems can be designed for a sustainable future.</p>
 <p>At the University of British Columbia, working with Professor Dongwook Yoon at Socius Lab, I have pursued these questions through research on AI governance and HRI.</p>
 
-<h2>Research &amp; Publications</h2>
+<h2 id="publications">Research &amp; Publications</h2>
 <p>
 <strong><a href="pasta.html">PASTA: A Scalable Framework for Multi-Policy AI Compliance Evaluation</a></strong><br>
 <span class="subtitle">CHI 2026</span>
@@ -72,7 +129,7 @@
 <p>We wanted to explore how robots could protect women without taking away their control over the situation. We invited 15 women and female-identifying participants to act out six everyday safety scenarios with a researcher playing the robot. Through these enactments, we explored when women wanted a robot to step in, when they preferred to handle things themselves, and how a robot might appropriately act.</p>
 <p><a href="robot-autonomy.html">Read more</a></p>
 
-<h2>Awards</h2>
+<h2 id="awards">Awards</h2>
 <p>
 <strong>2027 CRA Outstanding Undergraduate Researcher Award, Nominated</strong><br>
 Computing Research Association<br>
@@ -94,7 +151,7 @@ University of British Columbia<br>
 Awarded for undergraduate research at the University of British Columbia.
 </p>
 
-<h2>Experience</h2>
+<h2 id="experience">Experience</h2>
 <p>
 <strong>Software Engineering Intern</strong>, Optum (Sept 2024 – Apr 2025)
 </p>
@@ -106,13 +163,6 @@ Awarded for undergraduate research at the University of British Columbia.
   <li><strong>Historical records:</strong> Retrieving past development activities and product documentation.</li>
   <li><strong>Project overview:</strong> Providing a centralized view of development activities across projects.</li>
 </ul>
-
-<h2>Contact</h2>
-<p>
-Email: <a href="mailto:yyang124@students.cs.ubc.ca">yyang124@students.cs.ubc.ca</a><br>
-GitHub: <a href="https://github.com/TrieYang">github.com/TrieYang</a><br>
-CV: <a href="cv.pdf" download>Download Her CV</a>
-</p>
 
 </body>
 </html>
