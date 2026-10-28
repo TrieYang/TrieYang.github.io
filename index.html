@@ -4,11 +4,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Trie (Yu) Yang</title>
-  <link rel="canonical" href="about.html">
-  <meta http-equiv="refresh" content="0; url=about.html">
-  <script>location.replace("about.html");</script>
+  <style>
+    body {
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 20px 80px;
+      background: #fff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: #111;
+    }
+
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { margin-bottom: 0; }
+    h2 { margin-top: 32px; }
+    .subtitle { color: #555; margin-top: 4px; }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .headshot {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    ul { margin: 0.4em 0 1em; padding-left: 1.2em; }
+    li { margin: 0.35em 0; }
+  </style>
 </head>
 <body>
-  <p><a href="about.html">Search to Know Trie</a></p>
+
+<div class="hero">
+  <img class="headshot" src="headshot.jpeg" alt="Trie Yang">
+  <div>
+    <h1>Trie (Yu) Yang</h1>
+    <div class="subtitle">
+      Computer Science @ UBC · Human-Computer Interaction · Human-Centered AI
+    </div>
+    <div class="subtitle">
+      <a href="cv.pdf">CV</a>
+    </div>
+  </div>
+</div>
+
+<p>I am a starting HCI researcher at UBC.</p>
+<p>My research lies in the tension space between [technical performance] and [the broader demands of responsible technology design], investigating how technical systems can be designed for a sustainable future.</p>
+<p>At the University of British Columbia, working with Professor Dongwook Yoon at Socius Lab, I have pursued these questions through research on AI governance and HRI.</p>
+
+<h2>Research &amp; Publications</h2>
+<p>
+<strong><a href="pasta.html">PASTA: A Scalable Framework for Multi-Policy AI Compliance Evaluation</a></strong><br>
+<span class="subtitle">CHI 2026</span>
+</p>
+<p>Imagine you're developing an AI system. The problem is, there are all these different AI policies you're supposed to follow, and each one comes with pages and pages of complicated requirements. Unless you're a policy expert or you go hire one, it's pretty hard to figure out if you're following the rules.</p>
+<p>So we built PASTA, which functions like an AI lawyer for developers. And it is open-source.</p>
+<p>You fill in a form describing your AI system, and PASTA goes through different policies to figure out which requirements you're meeting, which ones you might not be, and what you could do about it. The idea is to make something that normally takes a lot of time and expertise much easier for everyday developers.</p>
+<p><a href="pasta.html">Read more</a></p>
+
+<p>
+<strong><a href="robot-autonomy.html">Negotiating Robot Autonomy to Preserve User Responsiveness: A User Enactment Study of Personal Security Robots for Women's Safety</a></strong><br>
+<span class="subtitle">CHI 2027 Under Review</span>
+</p>
+<p>A woman is walking home alone when a stranger starts bothering her. A personal security robot could step in to help, but what if she doesn't want it to? Or what if it does nothing when she really needs help?</p>
+<p>We wanted to explore how robots could protect women without taking away their control over the situation. We invited 15 women and female-identifying participants to act out six everyday safety scenarios with a researcher playing the robot. Through these enactments, we explored when women wanted a robot to step in, when they preferred to handle things themselves, and how a robot might appropriately act.</p>
+<p><a href="robot-autonomy.html">Read more</a></p>
+
+<h2>Awards</h2>
+<p>
+<strong>2027 CRA Outstanding Undergraduate Researcher Award, Nominated</strong><br>
+Computing Research Association<br>
+Nominated, and still waiting to hear back.
+</p>
+<p>
+<strong>2026 CRA Outstanding Undergraduate Researcher Award, Honorable Mention</strong><br>
+Computing Research Association<br>
+Nominated and awarded based on the work published in 2026 CHI PASTA: A Scalable Framework for Multi-Policy AI Compliance Evaluation.
+</p>
+<p>
+<strong>2026 Work Learn International Undergraduate Research Award (WLIURA)</strong><br>
+University of British Columbia<br>
+Awarded for undergraduate research at the University of British Columbia.
+</p>
+<p>
+<strong>2025 Work Learn International Undergraduate Research Award (WLIURA)</strong><br>
+University of British Columbia<br>
+Awarded for undergraduate research at the University of British Columbia.
+</p>
+
+<h2>Experience</h2>
+<p>
+<strong>Software Engineering Intern</strong>, Optum (Sept 2024 – Apr 2025)
+</p>
+<p>I worked on internal infrastructure at Optum after a period of corporate restructuring and database migration. Many operational applications were originally designed to communicate with local database servers, where network latency was negligible. When the databases migrated, frequent and inefficient SQL queries became a major bottleneck.</p>
+<p>One of these applications was Traceability Matrix, an internal system for managing project information, development sprints, tickets, and product records. It had been out of service for nearly a year, and its original developers had left the company. My work involved restoring the application and refactoring its C# code and SQL stored procedures to accommodate the new database infrastructure. The restored system supports:</p>
+<ul>
+  <li><strong>Development tracking:</strong> Synchronizing and organizing project, sprint, and ticket records.</li>
+  <li><strong>Product traceability:</strong> Linking product information to related projects, sprints, and tickets.</li>
+  <li><strong>Historical records:</strong> Retrieving past development activities and product documentation.</li>
+  <li><strong>Project overview:</strong> Providing a centralized view of development activities across projects.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>
+Email: <a href="mailto:yyang124@students.cs.ubc.ca">yyang124@students.cs.ubc.ca</a><br>
+GitHub: <a href="https://github.com/TrieYang">github.com/TrieYang</a><br>
+CV: <a href="cv.pdf" download>Download Her CV</a>
+</p>
+
 </body>
 </html>

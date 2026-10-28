@@ -1,0 +1,64 @@
+html, body, a, button, input, label, summary {
+  cursor: auto;
+}
+
+body.article {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 0 20px 80px;
+  background: #fff;
+  color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body.article .article-grid {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+body.article .article-body {
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111;
+}
+
+body.article h1,
+body.article h1.article-title,
+body.article .article-body h2 {
+  font-family: inherit;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+body.article h1.article-title {
+  margin: 8px 0 20px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+body.article .article-body h2 {
+  margin: 32px 0 12px;
+  font-size: 1.25rem;
+}
+
+body.article a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+body.article a:hover,
+body.article a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+body.article .home-link {
+  display: inline-block;
+  margin-bottom: 8px;
+}
