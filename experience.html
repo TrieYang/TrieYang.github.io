@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industry Experience — Trie Yang</title>
+  <link rel="stylesheet" href="css/site.css?v=19">
+</head>
+<body class="section">
+  <main class="column">
+    <header class="search mast">
+      <div class="bar">
+        <input type="text" placeholder="Industry Experience" aria-label="Search for Trie" aria-expanded="false" aria-controls="suggestions" aria-autocomplete="list" autocomplete="off" autocorrect="off" spellcheck="false">
+        <button class="icon-btn" type="button" aria-label="Search">
+          <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.25" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M15.2 15.2 L20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div class="entries">
+      <article class="entry">
+        <p class="entry-venue">Sept 2024 – Apr 2025</p>
+        <p class="entry-url">Optum</p>
+        <h2 class="entry-title">Software Engineering Intern</h2>
+        <div class="entry-body">
+          <p>I worked on internal infrastructure at Optum after a period of corporate restructuring and database migration. Many operational applications were originally designed to communicate with local database servers, where network latency was negligible. When the databases migrated, frequent and inefficient SQL queries became a major bottleneck.</p>
+          <p>One of these applications was Traceability Matrix, an internal system for managing project information, development sprints, tickets, and product records. It had been out of service for nearly a year, and its original developers had left the company. My work involved restoring the application and refactoring its C# code and SQL stored procedures to accommodate the new database infrastructure. The restored system supports:</p>
+          <ul>
+            <li><strong>Development tracking:</strong> Synchronizing and organizing project, sprint, and ticket records.</li>
+            <li><strong>Product traceability:</strong> Linking product information to related projects, sprints, and tickets.</li>
+            <li><strong>Historical records:</strong> Retrieving past development activities and product documentation.</li>
+            <li><strong>Project overview:</strong> Providing a centralized view of development activities across projects.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </main>
+  <script src="js/site.js?v=14"></script>
+</body>
+</html>
