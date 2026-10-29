@@ -10,7 +10,7 @@
       margin: 48px auto 72px;
       padding: 0 24px;
       background: #fff;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: "Times New Roman", Times, serif;
       line-height: 1.55;
       color: #111;
     }
@@ -22,20 +22,24 @@
 
     .layout {
       display: grid;
-      grid-template-columns: 220px minmax(0, 1fr);
+      grid-template-columns: 260px minmax(0, 1fr);
       column-gap: 56px;
       align-items: start;
     }
 
     .rail h1 {
-      margin: 0.55em 0 0.45em;
-      font-size: 1.45rem;
-      line-height: 1.15;
+      margin: 0.4em 0 0.35em;
+      font-size: 2.15rem;
+      font-weight: 700;
+      line-height: 1.05;
     }
     .headshot { width: 100%; height: auto; display: block; }
-    .rail p { margin: 0 0 0.85em; font-size: 0.95rem; }
-    .rail nav { margin-top: 1.4em; }
-    .rail nav a { display: block; margin: 0.2em 0; }
+    .rail p { margin: 0; font-size: 1.05rem; line-height: 1.25; }
+    .rail .role { font-weight: 700; }
+    .rail .place { font-style: italic; }
+    .rail .contact { margin-top: 0.9em; }
+    .rail nav { margin-top: 1.15em; }
+    .rail nav a { display: block; margin: 0.15em 0; }
 
     .lede {
       margin: 0 0 0.85em;
@@ -49,7 +53,7 @@
 
     @media (max-width: 700px) {
       .layout { grid-template-columns: 1fr; row-gap: 28px; }
-      .rail { max-width: 220px; }
+      .rail { max-width: 260px; }
     }
   </style>
 </head>
@@ -59,10 +63,13 @@
 <aside class="rail">
   <img class="headshot" src="headshot.jpeg" alt="Trie Yang">
   <h1>Trie (Yu) Yang</h1>
-  <p>Computer Science<br>The University of British Columbia</p>
-  <p>With <a href="https://dwyoon.com/">Professor Dongwook Yoon</a>, <a href="https://www.cs.ubc.ca/labs/socius/">SOCIUS Lab</a></p>
-  <p>Human-Computer Interaction<br>Human-Centered AI</p>
-  <p>
+  <p class="role"><a href="https://www.cs.ubc.ca/">Computer Science</a></p>
+  <p class="place"><a href="https://www.ubc.ca/">The University of British Columbia</a></p>
+  <p class="place"><a href="https://www.cs.ubc.ca/labs/socius/">SOCIUS Lab</a></p>
+  <p class="place"><a href="https://dwyoon.com/">Professor Dongwook Yoon</a></p>
+  <p>Human-Computer Interaction</p>
+  <p>Human-Centered AI</p>
+  <p class="contact">
     <a href="cv.pdf">CV</a><br>
     <a href="https://github.com/TrieYang">GitHub</a><br>
     <a href="mailto:yyang124@students.cs.ubc.ca">yyang124@students.cs.ubc.ca</a>
@@ -84,10 +91,8 @@
 <strong><a href="pasta.html">PASTA: A Scalable Framework for Multi-Policy AI Compliance Evaluation</a></strong><br>
 <span class="subtitle">CHI 2026</span>
 </p>
-<p>Imagine you're developing an AI system. The problem is, there are all these different AI policies you're supposed to follow, and each one comes with pages and pages of complicated requirements. Unless you're a policy expert or you go hire one, it's pretty hard to figure out if you're following the rules.</p>
-<p>So we built PASTA, which functions like an AI lawyer for developers. And it is open-source.</p>
-<p>You fill in a form describing your AI system, and PASTA goes through different policies to figure out which requirements you're meeting, which ones you might not be, and what you could do about it. The idea is to make something that normally takes a lot of time and expertise much easier for everyday developers.</p>
-<p><a href="pasta.html">Read more</a></p>
+<p>AI practitioners, such as developers, designers, and product managers, face a growing number of policies, each with complex requirements that are difficult to interpret without legal expertise.</p>
+<p>We developed PASTA, an open-source, LLM-powered tool that helps developers assess their AI systems against multiple policies. Given a description of an AI system, PASTA identifies requirements that are met or potentially unmet and provides actionable recommendations for improvement. Our goal is to make policy compliance more accessible to everyday AI practitioners.</p>
 
 <p>
 <strong><a href="robot-autonomy.html">Negotiating Robot Autonomy to Preserve User Responsiveness: A User Enactment Study of Personal Security Robots for Women's Safety</a></strong><br>
@@ -95,7 +100,6 @@
 </p>
 <p>A woman is walking home alone when a stranger starts bothering her. A personal security robot could step in to help, but what if she doesn't want it to? Or what if it does nothing when she really needs help?</p>
 <p>We wanted to explore how robots could protect women without taking away their control over the situation. We invited 15 women and female-identifying participants to act out six everyday safety scenarios with a researcher playing the robot. Through these enactments, we explored when women wanted a robot to step in, when they preferred to handle things themselves, and how a robot might appropriately act.</p>
-<p><a href="robot-autonomy.html">Read more</a></p>
 
 <h2 id="awards">Awards</h2>
 <p>

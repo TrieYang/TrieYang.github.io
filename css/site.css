@@ -8,7 +8,7 @@
   --ghost: #e4e4e4;
   --ghost-dark: #c8c8c8;
   --shadow: 3px 3px 0 rgba(0, 0, 0, 0.16);
-  --font: "Courier New", Courier, monospace;
+  --font: "Times New Roman", Times, serif;
   --cursor: url("../cursor.svg?v=2") 4 7, auto;
 }
 
